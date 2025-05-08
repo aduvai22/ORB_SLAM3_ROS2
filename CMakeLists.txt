@@ -47,6 +47,11 @@ link_directories(
   include
 )
 
+# Add launch files directory
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 # Executables and dependencies
 
 add_executable(mono
