@@ -39,7 +39,7 @@ include_directories(
   ${ORB_SLAM3_ROOT_DIR}/Thirdparty/DBoW2
   ${EIGEN3_INCLUDE_DIR}
   ${Pangolin_INCLUDE_DIRS}
-  /home/adnana/Install/ORB_SLAM3
+  # /root/Install/ORB_SLAM3
 )
 
 # Link directories (optional, keep if required)
@@ -53,7 +53,7 @@ add_executable(mono
   src/monocular/mono.cpp
   src/monocular/monocular-slam-node.cpp
 )
-ament_target_dependencies(mono rclcpp sensor_msgs geometry_msgs nav_msgs visualization_msgs tf2_ros cv_bridge ORB_SLAM3 Pangolin OpenCV)
+ament_target_dependencies(mono rclcpp sensor_msgs geometry_msgs nav_msgs visualization_msgs tf2_ros cv_bridge message_filters ORB_SLAM3 Pangolin OpenCV)
 
 add_executable(rgbd
   src/rgbd/rgbd.cpp
@@ -71,7 +71,7 @@ add_executable(stereo-inertial
   src/stereo-inertial/stereo-inertial.cpp
   src/stereo-inertial/stereo-inertial-node.cpp
 )
-ament_target_dependencies(stereo-inertial rclcpp sensor_msgs geometry_msgs nav_msgs visualization_msgs tf2_ros cv_bridge ORB_SLAM3 Pangolin OpenCV)
+ament_target_dependencies(stereo-inertial rclcpp sensor_msgs geometry_msgs nav_msgs visualization_msgs tf2_ros cv_bridge message_filters ORB_SLAM3 Pangolin OpenCV)
 
 # Install targets
 install(TARGETS mono rgbd stereo stereo-inertial
