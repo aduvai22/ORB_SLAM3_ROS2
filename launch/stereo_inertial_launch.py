@@ -19,5 +19,13 @@ def generate_launch_description():
                 'false',
                 'false'
             ]
-        )
+        ),
+
+        # Launch rosbagger node
+        Node(
+            package='shape', 
+            executable='rosbag_client_node',
+            name='rosbag_client_node',
+            output='screen',
+        ),
     ])
