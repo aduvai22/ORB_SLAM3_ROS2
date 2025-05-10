@@ -15,7 +15,7 @@ def generate_launch_description():
             ],
             arguments=[
                 '/root/aqua_ws/src/orbslam3_ros2/vocabulary/ORBvoc.txt',
-                '/root/aqua_ws/src/orbslam3_ros2/config/stereo-inertial/TUM-VI.yaml',
+                '/root/aqua_ws/src/orbslam3_ros2/config/stereo-inertial/Aqua_front_stereo.yaml',
                 'false',
                 'false'
             ]
