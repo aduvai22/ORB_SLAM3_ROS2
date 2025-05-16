@@ -11,7 +11,7 @@ def generate_launch_description():
             remappings=[
                 ('/cam0/image_raw', '/a15/camera/left/image_raw'),
                 ('/cam1/image_raw', '/a15/camera/right/image_raw'),
-                ('/imu0', '/a15/imu/data')
+                ('/imu0', '/a15/imu/imu/data')
             ],
             arguments=[
                 '/root/aqua_ws/src/orbslam3_ros2/vocabulary/ORBvoc.txt',

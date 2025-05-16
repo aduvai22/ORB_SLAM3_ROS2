@@ -3,7 +3,7 @@
 #--------------------------------------------------------------------------------------------
 # Camera Parameters. Adjust them!
 #--------------------------------------------------------------------------------------------
-Camera.type: "pinhole"
+Camera.type: "PinHole"
 
 # Left Camera calibration and distortion parameters (OpenCV)
 Camera.fx: 710.3119518603645
@@ -52,7 +52,7 @@ Camera.width: 1280
 Camera.height: 720
 
 # Camera frames per second 
-Camera.fps: 30.0
+Camera.fps: 20.0
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
@@ -62,7 +62,7 @@ Camera.imageScale: 1.0
 
 # Close/Far threshold. Baseline times.
 ThDepth: 40.0
-Camera.bf: 0.09307196567895873 * 710.3119518603645  # ≈ 66.08
+Camera.bf: 66.08 #0.09307196567895873 * 710.3119518603645
 
 
 
